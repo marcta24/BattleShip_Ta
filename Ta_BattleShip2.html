@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TA_BattleShip</title>
+	<style>
+		div{
+			background-color:aqua;
+			width: 100px; height: 100px;
+			display: inline-table;
+			margin: 3px;	
+			}
+/*why does inline default format to size, without customizatiom?*/
+	</style>
+</head>
+	
+<!--<script src="test.js"></script> -->
+	
+<body>
+	
+	<div id="area1">
+	area 1 
+	</div>
+	
+	<div id="area2">
+	area 2
+	</div>
+	
+	<div id="area3">
+	area 3
+	</div>
+	
+	<div id="area4">
+	area 4
+	</div>
+	
+	<div id="area5">
+	area 5
+	</div>
+	
+	<div id="area6">
+	area 6
+	</div>
+	
+	<div id="area7">
+	area 7
+	</div>
+	
+	<div id="area8">
+	area 8
+	</div>
+	
+	<div id="area9">
+	area 9
+	</div>
+	
+	<div id="area10">
+	area 10
+	</div>
+	
+	<div id="area11">
+	area 11 
+	</div>
+	
+	<div id="area12">
+	area 12
+	</div>
+	
+	<div id="area13">
+	area 13
+	</div>
+	
+	<div id="area14">
+	area 14
+	</div>
+	
+	<div id="area15">
+	area 15
+	</div>
+	
+	<div id="area16">
+	area 16
+	</div>
+	
+	<div id="area17">
+	area 17
+	</div>
+	
+	<div id="area18">
+	area 18
+	</div>
+	
+	<div id="area19">
+	area 19
+	</div>
+	
+	<div id="area20">
+	area 20
+	</div>
+
+	
+	
+	<br /> <br/>
+	
+	Guess An Area:
+<input type="text" size="14" id="userInput">
+	  
+	   <button>Fire a missile</button>
+		
+	<script>
+		var userInput=alert("You have 6 guesses");
+//		this is the random number generator
+		let x=Math.floor(Math.random()*18)+1   
+		let areas=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+areas[0]=document.querySelector("#area1");
+areas[1]=document.querySelector("#area2");
+areas[2]=document.querySelector("#area3");
+areas[3]=document.querySelector("#area4");
+areas[4]=document.querySelector("#area5");
+areas[5]=document.querySelector("#area6");
+areas[6]=document.querySelector("#area7");
+areas[7]=document.querySelector("#area8");
+areas[8]=document.querySelector("#area9");
+areas[9]=document.querySelector("#area10");
+areas[10]=document.querySelector("#area11");
+areas[11]=document.querySelector("#area12");
+areas[12]=document.querySelector("#area13");
+areas[13]=document.querySelector("#area14");
+areas[14]=document.querySelector("#area15");
+areas[15]=document.querySelector("#area16");
+areas[16]=document.querySelector("#area17");
+areas[17]=document.querySelector("#area18");
+areas[18]=document.querySelector("#area19");
+areas[19]=document.querySelector("#area20");
+		var myButton=document.querySelector("button");
+		var userInput=document.getElementById("userInput");
+		let gameCounter=0;
+		
+		
+		function myFunction(){
+			
+			gameCounter++;
+			//		alert(x);
+		if(userInput.value==1){
+		areas[0].style.backgroundColor="orange";
+		}
+		if(userInput.value==2){
+		areas[1].style.backgroundColor="orange";
+		}
+		if(userInput.value==3){
+		areas[2].style.backgroundColor="red";
+		}
+		if(userInput.value==4){
+		areas[3].style.backgroundColor="red";
+		}
+		if(userInput.value==5){
+		areas[4].style.backgroundColor="red";
+		}
+		if(userInput.value==6){
+		areas[5].style.backgroundColor="orange";
+		}
+		if(userInput.value==7){
+		areas[6].style.backgroundColor="orange";
+		}
+		if(userInput.value==8){
+		areas[7].style.backgroundColor="red";
+		}
+		if(userInput.value==9){
+		areas[8].style.backgroundColor="orange";
+		}
+		if(userInput.value==10){
+		areas[9].style.backgroundColor="orange";
+		}
+		if(userInput.value==11){
+		areas[10].style.backgroundColor="orange";
+		}
+		if(userInput.value==12){
+		areas[11].style.backgroundColor="orange";
+		}
+		if(userInput.value==13){
+		areas[12].style.backgroundColor="orange";
+		}
+		if(userInput.value==14){
+		areas[13].style.backgroundColor="orange";
+		}
+		if(userInput.value==15){
+		areas[14].style.backgroundColor="orange";
+		}
+		if(userInput.value==16){
+		areas[15].style.backgroundColor="red";
+		}
+		if(userInput.value==17){
+		areas[16].style.backgroundColor="red";
+		}
+		if(userInput.value==18){
+		areas[17].style.backgroundColor="red";
+		}
+		if(userInput.value==19){
+		areas[18].style.backgroundColor="orange";
+		}
+		if(userInput.value==20){
+		areas[19].style.backgroundColor="orange";
+		}
+			
+				if (gameCounter>6){
+				document.write("You ran out of guesses and lost." + BR );
+			}
+		
+   
+            }
+		
+       
+            
+		myButton.addEventListener("click", myFunction,true );
+</script>
+</body>
+</html>
+
+
